@@ -1,0 +1,28 @@
+{
+  "name": "copious-session-cluster",
+  "version": "0.1.0",
+  "description": "An extension of global_sessions providing cluster management, decay rings and quota buffering.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/copious-world/copious-session-cluster.git"
+  },
+  "keywords": [
+    "quota",
+    "decay",
+    "session",
+    "cluster",
+    "index",
+    "table",
+    "hashmap"
+  ],
+  "author": "R. Leddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/copious-world/copious-session-cluster/issues"
+  },
+  "homepage": "https://github.com/copious-world/copious-session-cluster#readme"
+}
