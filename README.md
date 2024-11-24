@@ -1,6 +1,6 @@
 # copious-session-cluster
 
-An extension of global_sessions providing cluster management, decay rings and quota buffering.
+An extension of `global_sessions` providing cluster management, decay rings and quota buffering.
 
 ## Purpose
 
@@ -17,7 +17,7 @@ A startup and configuration template is provided. Deference to **/etc** file ent
 
 ## Extended LRU
 
-The ***session cluster*** can focus on a single sized object and treat all shards of the table as a single key-value map. So, in this documentation we may refer to the **session object** as the type of object stored. This is a fixed sized object. This module can handler other functional types of objects with fixed size. Another module can deal with varying sized objects.
+The ***session cluster*** can focus on a single sized object and treat all shards of the table as a single key-value map. So, in this documentation we may refer to the **session object** as the type of object stored. This is a fixed sized object. This module can handle other functional types of objects with fixed size. Another module can deal with varying sized objects.
 
 **Session objects**, as well as other types of objects, can be placed in LRUs, which allow them to reside in memory as long as processes have use for them. The aim of the LRU operation is to keep memory constant for operations while the load of outside influences varies. An LRU may fill up as new data comes in. So, the LRU might be extended to allow session storage to increase temporarily or to make use of secondary reserved storage or high preasure situations. 
 
